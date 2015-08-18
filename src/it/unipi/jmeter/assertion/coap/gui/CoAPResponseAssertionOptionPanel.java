@@ -1,7 +1,5 @@
 package it.unipi.jmeter.assertion.coap.gui;
 
-import it.unipi.jmeter.assertion.coap.CoAPResponseAssertion;
-
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
@@ -16,10 +14,12 @@ import javax.swing.border.EtchedBorder;
 
 import java.awt.Font;
 import java.util.List;
-import java.awt.event.ItemListener;
-import java.awt.event.ItemEvent;
 
 public class CoAPResponseAssertionOptionPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField txtETag;
 	private JTextField txtIfMatch;
 	private JTextField txtUriHost;

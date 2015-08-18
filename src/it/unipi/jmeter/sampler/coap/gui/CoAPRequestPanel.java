@@ -5,6 +5,10 @@ import javax.swing.BoxLayout;
 
 public class CoAPRequestPanel extends JPanel {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel udpPanel;
 	private JPanel messagePanel;
 	private JPanel optionPanel;

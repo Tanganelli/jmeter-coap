@@ -1,12 +1,5 @@
 package it.unipi.jmeter.modifier.coap;
 
-import it.unipi.jmeter.sampler.coap.ByteBufferSerializer;
-import it.unipi.jmeter.sampler.coap.CoAPSampler;
-
-import java.io.IOException;
-import java.net.DatagramSocket;
-import java.nio.ByteBuffer;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +10,6 @@ import org.apache.jmeter.testelement.TestStateListener;
 import org.apache.jmeter.threads.JMeterContextService;
 import org.apache.jmeter.threads.JMeterVariables;
 import org.apache.jorphan.logging.LoggingManager;
-import org.apache.jorphan.util.JOrphanUtils;
 import org.apache.log.Logger;
 import org.eclipse.californium.core.coap.MediaTypeRegistry;
 import org.eclipse.californium.core.coap.Option;
@@ -27,11 +19,14 @@ import org.eclipse.californium.core.coap.Request;
 import org.eclipse.californium.core.coap.CoAP.Code;
 import org.eclipse.californium.core.coap.CoAP.Type;
 import org.eclipse.californium.core.network.serialization.DataSerializer;
-import org.eclipse.californium.core.network.serialization.Serializer;
-import org.eclipse.californium.elements.RawData;
 
 public class CoAPPreProcessor 	extends AbstractTestElement
 								implements PreProcessor, NoThreadClone, TestStateListener {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private static final Logger log = LoggingManager.getLoggerForClass();
 	

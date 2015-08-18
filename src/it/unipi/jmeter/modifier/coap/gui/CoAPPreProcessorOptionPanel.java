@@ -17,6 +17,10 @@ import java.util.List;
 
 public class CoAPPreProcessorOptionPanel extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField txtETag;
 	private JTextField txtIfMatch;
 	private JTextField txtUriHost;

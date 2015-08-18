@@ -16,6 +16,10 @@ import java.awt.Font;
 import java.util.List;
 
 public class CoAPRequestOptionPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField txtETag;
 	private JTextField txtIfMatch;
 	private JTextField txtUriHost;

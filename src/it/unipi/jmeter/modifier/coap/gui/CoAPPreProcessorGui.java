@@ -2,20 +2,12 @@ package it.unipi.jmeter.modifier.coap.gui;
 
 
 import it.unipi.jmeter.modifier.coap.CoAPPreProcessor;
-import it.unipi.jmeter.sampler.coap.gui.CoAPRequestMessagePanel;
-import it.unipi.jmeter.sampler.coap.gui.CoAPRequestOptionPanel;
-import it.unipi.jmeter.sampler.coap.gui.CoAPRequestPanel;
-import it.unipi.jmeter.sampler.coap.gui.CoAPRequestPayloadPanel;
-import it.unipi.jmeter.sampler.coap.gui.CoAPRequestUDPPanel;
-
 import java.awt.BorderLayout;
 import java.awt.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
-
 
 import org.apache.jmeter.processor.gui.AbstractPreProcessorGui;
 import org.apache.jmeter.testelement.TestElement;
@@ -27,6 +19,10 @@ import org.eclipse.californium.core.coap.CoAP.Type;
 
 public class CoAPPreProcessorGui extends AbstractPreProcessorGui {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static final Logger log = LoggingManager.getLoggerForClass();
 	private CoAPPreProcessorPanel dataPanel;
 

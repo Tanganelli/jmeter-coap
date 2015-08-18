@@ -10,6 +10,10 @@ import javax.swing.border.EtchedBorder;
 
 public class CoAPRequestPayloadPanel extends JPanel {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextArea txaPayload;
 	/**
 	 * Create the panel.

@@ -14,6 +14,10 @@ import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 
 public class CoAPRequestUDPPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField txtHostname;
 	private JTextField txtPort;
 	private JCheckBox chkWaitResponse;

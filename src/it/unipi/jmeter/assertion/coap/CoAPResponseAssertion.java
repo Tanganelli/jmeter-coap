@@ -20,6 +20,11 @@ import org.eclipse.californium.core.coap.Message;
 
 public class CoAPResponseAssertion extends ResponseAssertion{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/*
 	 * Mask values for TEST_TYPE TODO: remove either MATCH or CONTAINS - they
 	 * are mutually exckusive

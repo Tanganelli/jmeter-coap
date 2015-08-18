@@ -3,7 +3,6 @@ package it.unipi.jmeter.assertion.coap.gui;
 import it.unipi.jmeter.assertion.coap.CoAPResponseAssertion;
 
 import java.awt.BorderLayout;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,9 +20,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-import org.apache.jmeter.assertions.ResponseAssertion;
 import org.apache.jmeter.assertions.gui.AbstractAssertionGui;
-import org.apache.jmeter.gui.AbstractScopedJMeterGuiComponent;
 import org.apache.jmeter.gui.util.PowerTableModel;
 import org.apache.jmeter.gui.util.TextAreaCellRenderer;
 import org.apache.jmeter.gui.util.TextAreaTableCellEditor;
@@ -32,11 +29,15 @@ import org.apache.jmeter.testelement.property.PropertyIterator;
 import org.apache.jmeter.util.JMeterUtils;
 import org.eclipse.californium.core.coap.CoAP.ResponseCode;
 import org.eclipse.californium.core.coap.MediaTypeRegistry;
-import org.eclipse.californium.core.coap.CoAP.Code;
 import org.eclipse.californium.core.coap.CoAP.Type;
 
 
 public class CoAPResponseAssertionGui extends AbstractAssertionGui {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/** The name of the table column in the list of patterns. */
 	private static final String COL_NAME = "CoAP Response Payload"; //$NON-NLS-1$
 

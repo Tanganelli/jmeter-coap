@@ -19,6 +19,10 @@ import java.awt.Font;
 import java.util.List;
 
 public class CoAPRequestMessagePanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField txtMid;
 	private JTextField txtToken;
 	private JTextField txtPath;

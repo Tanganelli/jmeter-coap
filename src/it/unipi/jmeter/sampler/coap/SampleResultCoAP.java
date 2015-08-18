@@ -4,6 +4,10 @@ import org.apache.jmeter.samplers.SampleResult;
 import org.eclipse.californium.core.coap.Request;
 
 public class SampleResultCoAP extends SampleResult {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Request request;
 
 	public Request getRequest() {

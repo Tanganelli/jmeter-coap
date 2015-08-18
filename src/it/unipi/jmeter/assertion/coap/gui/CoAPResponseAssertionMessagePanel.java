@@ -19,6 +19,10 @@ import java.util.List;
 
 public class CoAPResponseAssertionMessagePanel extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField txtMid;
 	private JTextField txtToken;
 	private JComboBox cmbType;

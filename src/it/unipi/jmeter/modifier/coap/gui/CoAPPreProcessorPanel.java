@@ -5,6 +5,10 @@ import javax.swing.BoxLayout;
 
 public class CoAPPreProcessorPanel extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel messagePanel;
 	private JPanel optionPanel;
 	private JPanel payloadPanel;

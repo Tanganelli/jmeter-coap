@@ -20,6 +20,10 @@ import java.util.List;
 
 public class CoAPPreProcessorMessagePanel extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField txtMid;
 	private JTextField txtToken;
 	private JTextField txtPath;

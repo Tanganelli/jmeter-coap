@@ -1,7 +1,6 @@
 package it.unipi.jmeter.sampler.coap.gui;
 
 
-import it.unipi.jmeter.sampler.coap.ByteBufferSerializer;
 import it.unipi.jmeter.sampler.coap.CoAPSampler;
 
 import java.awt.BorderLayout;
@@ -17,12 +16,6 @@ import org.apache.log.Logger;
 import org.eclipse.californium.core.coap.CoAP.Code;
 import org.eclipse.californium.core.coap.CoAP.Type;
 import org.eclipse.californium.core.coap.MediaTypeRegistry;
-import org.eclipse.californium.core.coap.Option;
-import org.eclipse.californium.core.coap.OptionNumberRegistry;
-import org.eclipse.californium.core.coap.OptionSet;
-import org.eclipse.californium.core.coap.Request;
-import org.eclipse.californium.core.network.serialization.Serializer;
-import org.eclipse.californium.elements.RawData;
 
 /**
  * Example Sampler (non-Bean version)
@@ -36,6 +29,10 @@ import org.eclipse.californium.elements.RawData;
  */
 public class CoAPSamplerGui extends AbstractSamplerGui {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static final Logger log = LoggingManager.getLoggerForClass();
 	private CoAPRequestPanel dataPanel;
 
