@@ -257,13 +257,13 @@ public class CoAPSampler extends AbstractSampler {
         	{
         		datagram = new DatagramPacket(new byte[recvBufSize], recvBufSize);
         		socket.receive(datagram);
-        		res.latencyEnd();
 
         		if(isContinueSeparate())
         			separate = encoder.readResponse(datagram);
         		else
         			separate = false;
         	}
+        	res.latencyEnd();
             res.sampleEnd();
             if (isCloseSocket()) {
             	socket.close();
